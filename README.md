@@ -1,5 +1,7 @@
 # YetAnotherURLShortener
-The purpose of a URL shortener is to convert URLs that are long into a short URL that still preserves the original URL route. For example the shortener can convert this URL: 
+The purpose of a [URL shortener](https://en.wikipedia.org/wiki/URL_shortening) is to convert a long unreadable URL into a short URL that routes the user to the original URL. 
+
+For example the shortener can convert this URL: 
 - https://www.amazon.in/Apple-iPhone-X-Silver-256GB/dp/B071P37652/ref=sr_1_1?s=electronics&ie=UTF8&qid=1522661136sr=1-1&keywords=iphon
 
 Into a short URL:
