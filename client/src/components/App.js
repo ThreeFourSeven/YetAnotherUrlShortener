@@ -1,5 +1,4 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom'
 import {shortenURL, deleteShortURL, getShortURL} from './../api';
 import "./styles.css";
 class App extends React.Component {
@@ -36,7 +35,7 @@ class App extends React.Component {
         <div className="container">
             <h4>Example long URL</h4>
             <input type="text" defaultValue="https://www.amazon.in/Apple-iPhone-X-Silver-256GB/dp/B071P37652/ref=sr_1_1?s=electronics&ie=UTF8&qid=1522661136sr=1-1&keywords=iphon" readOnly></input>
-            <h4>URL Before</h4>
+            <h4>Long URL</h4>
             <input name="urlBefore" type="text" placeholder="https://www.amazon.in/Apple-iPhone-X-Silver-256GB/dp/B071P37652/ref=sr_1_1?s=electronics&ie=UTF8&qid=1522661136sr=1-1&keywords=iphon" defaultValue={urlBefore} onChange={this.handleInput}></input>
             <button onClick={ () => {
                 const {urlBefore, baseURL, code} = this.state;
@@ -61,7 +60,7 @@ class App extends React.Component {
                     f();
             }}>Generate</button>
             <h4>Short URL</h4>
-            <p>{shortURL}</p>
+            <input defaultValue={shortURL} readOnly></input>
             <p className="yellow red-text">{msg}</p>
         </div>
         );
